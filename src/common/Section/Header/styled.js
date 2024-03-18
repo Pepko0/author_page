@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const AutorInformations = styled.div`
+export const Container = styled.div`
   border: solid;
   display: grid;
   grid-template-columns: auto 1fr;
   max-width: 1000px;
-  margin: 120px auto;
+  margin: 120px auto 0px;
 `;
 
 export const Group = styled.div`

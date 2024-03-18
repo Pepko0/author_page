@@ -1,5 +1,5 @@
 import {
-  AutorInformations,
+  Container,
   Caption,
   LeadParagraph,
   H1,
@@ -8,7 +8,7 @@ import {
 } from "./styled.js";
 
 const Header = () => (
-  <AutorInformations>
+  <Container>
     <Group>
       <Image src="https://i.postimg.cc/bv5M2vg3/photo2.jpg" />
     </Group>
@@ -20,7 +20,7 @@ const Header = () => (
         looking for new job opportunities.
       </LeadParagraph>
     </Group>
-  </AutorInformations>
+  </Container>
 );
 
 export default Header;

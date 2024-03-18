@@ -1,15 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-import Section from './common/Section';
+import "./App.css";
 import Header from "./common/Section/Header";
+import Experience from "./common/Section/Experience";
+import { Unit } from "./styled";
 
 function App() {
   return (
-    <Header />
-    
-
-  )
-
+    <Unit>
+      <Header />
+      <Experience />
+    </Unit>
+  );
 }
 
 export default App;
