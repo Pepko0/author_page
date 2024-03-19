@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border: solid;
+  // border: solid;
   display: grid;
   grid-template-rows: 1fr;
   max-width: 1000px;
@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Section = styled.div`
   border-bottom: 1px solid;
-  border-bottom-color: ${({theme}) => theme.color.gray}
+  border-bottom-color: ${({theme}) => theme.color.gray};
 
 `;
 
@@ -22,14 +22,19 @@ export const H1 = styled.h1`
   `;
 
 export const Ul = styled.ul`
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: solid;
+  // border: solid;
   font-size: 25px;
 `;
 
 export const Li = styled.li`
-  color: ${({ theme }) => theme.color.mainblue};
+  &:before{
+    content: "•";
+    color: ${({theme}) => theme.color.mainblue};
+    margin-right: 16px;
+  }
 `;
 
 export const Span = styled.span`

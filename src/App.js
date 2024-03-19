@@ -1,13 +1,19 @@
 import "./App.css";
+import useSkills from "./useSkills";
 import Header from "./common/Section/Header";
 import Experience from "./common/Section/Experience";
 import { Unit } from "./styled";
 
 function App() {
+  const skills = useSkills();
+  
+  
   return (
     <Unit>
       <Header />
-      <Experience />
+      <Experience 
+        skills={skills.mySkills}
+       />
     </Unit>
   );
 }
