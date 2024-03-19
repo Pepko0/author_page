@@ -11,7 +11,7 @@ html {
       }
       
       body {
-        background: ${({ theme }) => theme.color.gallery};
+        background: ${({ theme }) => theme.color.gray};
         margin: 0 auto;
         font-family: 'Lato', sans-serif;
       }
