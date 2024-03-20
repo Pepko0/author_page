@@ -1,15 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border: solid;
   display: grid;
   grid-template-columns: auto 1fr;
-  max-width: 1000px;
+  max-width: ${({theme}) => theme.size.maxwidth};
   margin: 120px auto 0px;
+  background-color: ${({theme}) => theme.color.white};
+  box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03);
+
+  @media(max-width: ${({theme}) => theme.media.phone}){
+    grid-template-columns: 1fr;
+  }
+
 `;
 
 export const Group = styled.div`
-
   margin: 15px;
 `;
 
@@ -19,6 +24,10 @@ export const Image = styled.img`
   margin: auto;
   max-width: 350px;
   border-radius: 250px;
+
+  @media(max-width: ${({theme}) => theme.media.phone}){
+    max-width: 225px;
+  }
 `;
 
 export const Caption = styled.p`

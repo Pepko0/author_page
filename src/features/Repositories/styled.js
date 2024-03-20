@@ -1,16 +1,12 @@
 import styled from "styled-components";
 
-export const Section = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border: solid;
-    max-width: 1000px;
-    margin: auto;
-`;
-
 export const Repositories = styled.div`
-    border: solid;
-    margin:10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: ${({theme}) => theme.color.white};
+    border: solid ${({theme}) => theme.color.mercury};
+
+    
 `;
 
 export const Title = styled.h2`
@@ -25,6 +21,4 @@ export const Content = styled.p`
 export const Link = styled.a`
     text-decoration: none;
     color:${({theme}) => theme.color.mainblue};
-    word-break: break-all;
-
 `;

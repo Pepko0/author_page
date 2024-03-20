@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
-    max-width: 1000px;
+    max-width: ${({theme}) => theme.size.maxwidth};
     margin: auto;
     background-color: ${({theme})=> theme.color.gray };
 `;
