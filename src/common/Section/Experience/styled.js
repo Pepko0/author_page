@@ -18,7 +18,6 @@ export const Section = styled.div`
 `;
 
 export const H1 = styled.h1`
-  font-family: ${({ theme }) => theme.font.inter};
   font-size: 25px;
   border-bottom: 1px, solid;
   `;

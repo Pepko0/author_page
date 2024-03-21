@@ -13,6 +13,9 @@ html {
       body {
         background: ${({ theme }) => theme.color.lightgray};
         font-family: ${({theme}) => theme.font.inter};
-        margin: 0 auto;
+
+        @media(max-width: ${({theme}) => theme.size.maxwidth}){
+          padding:5px;
+        }
       }
 `;

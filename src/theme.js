@@ -6,6 +6,8 @@ export const theme = {
         mainblue: "#0366D6",
         lightgray: "#f2f2f2",
         mercury: "#e2e2e2",
+        portage: "#7DA3E3",
+
     },
 
     media: {
@@ -19,5 +21,6 @@ export const theme = {
 
     size: {
         maxwidth: "1200px",
-    }
+   }
+
 }

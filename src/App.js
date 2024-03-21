@@ -14,7 +14,7 @@ function App() {
       <Header
         link="https://i.postimg.cc/bv5M2vg3/photo2.jpg"
         caption="MY NAME IS"
-        title="Kacper Lewko"
+        mail="Kacper Lewko"
         leadParagraph="👨🏻‍💻 Im a passionate Frontend Developer in love with React,currently
         looking for new job opportunities."
       />
@@ -23,7 +23,7 @@ function App() {
 
       <Footer
         caption="LET'S TALK!"
-        title="k.lewkosga@gmail.com"
+        mail="k.lewkosga@gmail.com"
         leadParagraph="I'm always open to new projects whenever I have the time. If you have a website, dashboard or a mobile app in mind and need help making your ideas come to life, feel free to contact me!"
       />
     </Unit>
