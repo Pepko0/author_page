@@ -7,17 +7,16 @@ import {
   Group,
 } from "./styled.js";
 
-const Header = () => (
+const Header = ({title, leadParagraph, caption, link}) => (
   <Container>
     <Group>
-      <Image src="https://i.postimg.cc/bv5M2vg3/photo2.jpg" />
+    <Image src={link} />
     </Group>
     <Group>
-      <Caption>MY NAME IS</Caption>
-      <H1>Kacper Lewko</H1>
+      <Caption>{caption}</Caption>
+      <H1>{title}</H1>
       <LeadParagraph>
-        👨🏻‍💻 Im a passionate Frontend Developer in love with React,currently
-        looking for new job opportunities.
+        {leadParagraph}
       </LeadParagraph>
     </Group>
   </Container>

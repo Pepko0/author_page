@@ -5,9 +5,7 @@ export const Container = styled.div`
   grid-template-columns: auto 1fr;
   max-width: ${({theme}) => theme.size.maxwidth};
   margin: 120px auto 0px;
-  background-color: ${({theme}) => theme.color.white};
-  box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03);
-
+  
   @media(max-width: ${({theme}) => theme.media.phone}){
     grid-template-columns: 1fr;
   }
@@ -16,6 +14,7 @@ export const Container = styled.div`
 
 export const Group = styled.div`
   margin: 15px;
+  max-width: 633px;
 `;
 
 export const Image = styled.img`

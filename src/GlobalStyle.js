@@ -12,7 +12,7 @@ html {
       
       body {
         background: ${({ theme }) => theme.color.lightgray};
+        font-family: ${({theme}) => theme.font.inter};
         margin: 0 auto;
-        font-family: 'Lato', sans-serif;
       }
 `;
