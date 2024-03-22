@@ -52,17 +52,17 @@ export const LeadParagraph = styled.p`
 `;
 
 export const Button = styled.button`
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
   font-size: 28px;
-  padding: 10px;
+  padding: 15px;
   background-color: ${({theme}) => theme.color.mainblue};
   border-radius: 10px;
   border: none;
+  margin-top: 35px;
+ 
 
   &:hover{
     cursor: pointer;
+    background-color: ${({theme}) => theme.color.portage};
   }
  
 `;
@@ -70,5 +70,10 @@ export const Button = styled.button`
 export const Link = styled.a`
   text-decoration: none;
   color: white;
-  display: block;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center; 
+  grid-gap: 20px;
+
   `;
+
