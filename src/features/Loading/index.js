@@ -4,7 +4,7 @@ const Loading = () => (
     <Content>
     
     <Title>
-        trelel
+    
     </Title>
     </Content>
 
